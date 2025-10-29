@@ -1,0 +1,352 @@
+/* ============ Navbar Custom Styling ============ */
+.header_menu {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Logo */
+.navbar-brand img {
+  max-height: 50px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333 !important;
+  padding: 10px 18px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Active link */
+.navbar-nav .nav-item.active .nav-link {
+  color: #007bff !important;
+  font-weight: 600;
+}
+
+/* Icons inside nav */
+.navbar-nav .nav-link i {
+  margin-right: 6px;
+}
+
+/* Center menu items */
+.navbar-nav {
+  flex: 1;
+  justify-content: center;
+}
+
+/* Search button */
+.search .btn {
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+/* Cart icon */
+.cart i {
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.cart:hover i {
+  transform: scale(1.1);
+}
+
+.cart .badge {
+  font-size: 12px;
+  padding: 4px 7px;
+}
+
+/* ============ Carousel Styling ============ */
+.header_carousel {
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure carousel images take full width and fixed height */
+.header_carousel .carousel-item img {
+  width: 100%;
+  height: 1000px;          /* Adjust height as needed */
+  object-fit: cover;      /* Keeps aspect ratio while filling area */
+}
+
+/* Prev/Next buttons styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  background-color: rgba(0, 0, 0, 0.4);  /* semi-transparent bg */
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* Hover effect for prev/next */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Add indicators (optional) */
+.carousel-indicators li {
+  background-color: #007bff;   /* active dot color */
+}
+
+.carousel-indicators .active {
+  background-color: #0056b3;
+}
+/* ============ Features Section ============ */
+.feature {
+  background: #f8f9fa; /* light background */
+}
+
+.feature .section_title h1 {
+  font-weight: 700;
+  color: #333;
+}
+
+.feature .col-md-4 {
+  background: #007bff;   /* Bootstrap primary color */
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.feature .col-md-4:hover {
+  transform: translateY(-10px);
+  background: #0056b3;   /* darker blue on hover */
+}
+
+.feature i {
+  color: #fff;           /* white icons */
+}
+
+.feature h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.feature div {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f1f1f1;        /* lighter text */
+}
+/* ============ Shop By Category ============ */
+.shop_by_category {
+  background: #f8f9fa; /* light background to separate section */
+}
+
+.shop_by_category .section_title h1 {
+  font-weight: 700;
+  color: #333;
+}
+
+.shop_by_category .card {
+  border: none;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.shop_by_category .card img {
+  transition: transform 0.5s ease;
+  border-radius: 12px;
+}
+
+.shop_by_category .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.shop_by_category .card:hover img {
+  transform: scale(1.1); /* zoom effect */
+}
+
+.shop_by_category .card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+/* ============ Products Section ============ */
+.products .section_title h1 {
+  font-weight: 700;
+  color: #222;
+}
+
+.single_product {
+  border-radius: 12px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single_product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.single_product .product_img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.single_product .product_img img {
+  transition: transform 0.5s ease;
+  border-radius: 12px;
+}
+
+.single_product:hover .product_img img {
+  transform: scale(1.1);
+}
+
+/* Badge (New Tag) */
+.single_product .new_product {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Ratings */
+.product-ratting i {
+  color: #fbc02d; /* yellow stars */
+  margin: 0 1px;
+}
+
+.product-ratting .low-star {
+  color: #ccc; /* grey for empty stars */
+}
+
+/* Product Name */
+.product-caption h4 a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.product-caption h4 a:hover {
+  color: #ff4d4d;
+}
+
+/* Price */
+.product-caption .price {
+  font-size: 20px;
+  color: #111;
+  margin-top: 5px;
+}
+/* ============ Footer Section ============ */
+.footer_section {
+  background: #111; /* dark modern background */
+  color: #ddd;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer_section .footer_title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+}
+.footer_section img {
+  filter: brightness(0) invert(1);
+}
+
+
+.footer_section .footer_title h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #ff4d4d;
+  margin-top: 8px;
+}
+
+/* Footer Links */
+.footer_links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_links ul li {
+  margin-bottom: 10px;
+}
+
+.footer_links ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer_links ul li a:hover {
+  color: #ff4d4d;
+  padding-left: 5px;
+}
+
+/* Brand Logo & Description */
+.footer_section .footer_title img {
+  margin-bottom: 15px;
+}
+
+.footer_section div {
+  color: #ccc;
+}
+
+/* Copyright */
+.footer_section .border-top {
+  border-color: #333 !important;
+  margin-top: 20px;
+}
+
+.footer_section h6 {
+  color: #888;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+/* Back to Top Button */
+.backtop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.backtop #button {
+  border-radius: 50%;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  background: #ff4d4d;
+  border: none;
+}
+
+.backtop #button i {
+  color: #fff;
+}
+
+.backtop #button:hover {
+  background: #e60000;
+  transform: translateY(-3px);
+}
+
+
+.testimonial .avatar img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+
+
+
+
