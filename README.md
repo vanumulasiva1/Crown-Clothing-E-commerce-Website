@@ -28,5 +28,18 @@ Crown Clothing is a modern, responsive e-commerce website built to showcase a pr
 
 ---
 
-## 📁 Folder Structure
+
+---
+
+
+---
+
+## ⚙️ How to Run Locally
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/vanumulasiva1/Crown-Clothing-E-commerce-Website.git
+
+
+
 
